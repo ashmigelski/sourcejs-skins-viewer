@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<!--[if IE 7]>         <html class="ie7"> <![endif]-->
+<!--[if IE 8]>         <html class="ie8"> <![endif]-->
+<!--[if IE 9]>         <html class="ie9"> <![endif]-->
+<!--[if gt IE 9]><!--> <html> <!--<![endif]-->
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title><%= info.title %></title>
+    <meta name="author" content="<%= info.author %>">
+    <% if (info.keywords !== '') {%>
+    <meta name="keywords" content="<%= info.keywords %>">
+    <% } %>
+
+    <!-- Your master-app styles -->
+        <link href="./bootstrap.css" rel="stylesheet">
+    <!-- /Your master-app styles -->
+
+    <!-- Source default resources -->
+        <link href="/source/assets/css/source.css" rel="stylesheet">
+        <script data-main="/source/assets/js/enter-the-source.js" src="/source/assets/js/require.bundle.js"></script>
+    <!-- /Source default resources -->
+</head>
+<body>
+    <div class="source_container">
+        <%- header %>
+        <div class="source_main source_col-main" role="main">
+            <h1><%= info.title %></h1>
+
+            <!-- .body for font, .table for background -->
+            <section class="source_section table">
+                <h2>Enabled buttons</h2>
+
+                <section class="source_example table body">
+                    <a href="#" class="btn btn-default">Default</a>
+                    <a href="#" class="btn btn-primary">Primary</a>
+                    <a href="#" class="btn btn-success">Success</a>
+                    <a href="#" class="btn btn-info">Info</a>
+                    <a href="#" class="btn btn-warning">Warning</a>
+                    <a href="#" class="btn btn-danger">Danger</a>
+                    <a href="#" class="btn btn-link">Link</a>
+                </section>
+            </section>
+
+            <section class="source_section table">
+                <h2>Disabled buttons</h2>
+
+                <section class="source_example table body">
+                    <button class="btn btn-default disabled">Default</button>
+                    <button class="btn btn-primary disabled">Primary</button>
+                    <button class="btn btn-success disabled">Success</button>
+                    <button class="btn btn-info disabled">Info</button>
+                    <button class="btn btn-warning disabled">Warning</button>
+                    <button class="btn btn-danger disabled">Danger</button>
+                    <button class="btn btn-link disabled">Link</button>
+                </section>
+            </section>
+
+            <section class="source_section table">
+                <h2>Buttons Sizing</h2>
+                <section class="source_example table body">
+                    <button class="btn btn-primary btn-lg">Large button</button>
+                    <button class="btn btn-primary">Default button</button>
+                    <button class="btn btn-primary btn-sm">Small button</button>
+                    <button class="btn btn-primary btn-xs">Mini button</button>
+                </section>
+            </section>
+        </div>
+        <%- footer %>
+    </div>
+</body>
+</html>
