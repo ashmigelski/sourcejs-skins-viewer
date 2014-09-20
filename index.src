@@ -3,10 +3,19 @@
 </div>
 
 <div class="source_col">
-    <div class="source_catalog" data-nav="/skins">
+    <div class="source_catalog">
         <ul class="source_catalog_list">
-            <!--Navigation generated dynamically via Global Navigation module-->
-            <img src="/source/assets/i/process.gif" alt="Loading..."/>
+            <li>
+                <div class="source_info">
+                    <a href="/skins" class="source_a_hl">Native implementation</a>
+                    <p>
+                        Render each skin from <span class="source_hl">user/skins/</span> subfolders
+                        using <span class="source_hl">user/core/views/skins.ejs</span> template on
+                        individual page
+                    </p>
+                </div>
+            </li>
         </ul>
     </div>
+
 </div>
