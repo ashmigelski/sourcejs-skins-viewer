@@ -1,0 +1,6 @@
+{
+    "title": "Skins viewer",
+    "role": "skins-viewer",
+    "path": "skins",
+    "template": "skins-viewer"
+}
